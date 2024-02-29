@@ -1,0 +1,17 @@
+npm install -D tailwindcss postcss autoprefixer
+
+npx tailwindcss init -p
+
+
+en el archivo tailwind.config agregar en content un array para linkear la(s) pagina(s) que va a tener los estilos de tailwind
+
+content: [
+    "./index.html",
+    "./src/**/*.{js,jsx}"
+  ]
+
+
+en el archivo src/assets/index.css agregar:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
